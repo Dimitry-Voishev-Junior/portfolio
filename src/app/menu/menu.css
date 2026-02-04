@@ -1,6 +1,6 @@
 nav {
     box-shadow: 0 4px 17px #0000004d;
-    background-color: #fff;
+    background-color: var(--color-white);
     position: fixed;
     width: 100%;
     display: flex;
@@ -17,7 +17,7 @@ nav ul {
     list-style: none;
     position: absolute;
     top: 70px;
-    background-color: #fff;
+    background-color: var(--color-white);
     width: 100%;
     gap: 30px;
 }

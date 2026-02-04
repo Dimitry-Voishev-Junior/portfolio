@@ -23,4 +23,49 @@
     --color-pink-1: #f42771;
 
     --color-black: #181818;
+    --color-white: #fff;
 }
+
+h1 {
+    font-size: var(--font-size-1)
+}
+
+h2 {
+    font-size: var(--font-size-2)
+}
+
+h3 {
+    font-size: var(--font-size-3)
+}
+
+a {
+    text-decoration: none;
+}
+
+p, a {
+    font-size: var(--font-size-4);
+    font-weight: 200;
+    color: var(--color-black-1)
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+.container .box {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    :root {
+        --font-size-1: 2.8rem;
+        --font-size-2: 2rem;
+        --font-size-3: 1.5rem;
+    }
+
+    .container {
+        padding: 60px 40px;
+    }
+}  
