@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MenuServices } from '../services/menu-services';
 
 @Component({
   selector: 'app-menu',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class Menu {
 
+  menuServices = inject(MenuServices)
 }
