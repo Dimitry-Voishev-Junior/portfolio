@@ -1,5 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MenuServices } from '../services/menu-services';
+import { ModelMenu } from '../models/modelMenu';
+
 
 @Component({
   selector: 'app-menu',
@@ -9,5 +11,18 @@ import { MenuServices } from '../services/menu-services';
 })
 export class Menu {
 
-  menuServices = inject(MenuServices)
+  menuServices = inject(MenuServices);
+
+  menuItems?: Array<ModelMenu>;
+
+  menuStatus = "closed";
+
+  ngOnInit() {
+    const menu = this.menuServices.getItems();
+    this.menuItems = menu;
+  }
+
+  menuClick() {
+    this.menuStatus = (this.menuStatus === "open" ? "closed" : 'open');
+  }
 }

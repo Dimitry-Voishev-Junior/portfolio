@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Menu } from '../models/menu';
+import { ModelMenu } from '../models/modelMenu';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MenuServices {
   
-  getItems() : Array<Menu> {
-    const menu: Array<Menu> = [
+  getItems() : Array<ModelMenu> {
+    const menu: Array<ModelMenu> = [
       {
         name: "Início",
         url: "#banner"

@@ -1,4 +1,4 @@
-export class Menu {
+export class ModelMenu {
     name?: string;
     url?: string;
 }
