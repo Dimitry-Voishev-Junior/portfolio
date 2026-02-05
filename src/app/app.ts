@@ -1,7 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Menu } from './menu/menu';
 import { Footer } from './footer/footer';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,13 @@ import { Footer } from './footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
+export class App implements AfterViewInit {
   protected readonly title = signal('portfolio');
+
+   ngAfterViewInit() {
+    AOS.init({
+      duration: 800,
+      once: false
+    });
+  }
 }

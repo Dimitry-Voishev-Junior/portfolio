@@ -1,8 +1,12 @@
 /* Box Banner */
+#banner {
+    height: 100vh;
+}
 
 .banner {
     display: flex;
     justify-content: center;
+    align-items: center;
     background: linear-gradient(180deg, var(--color-blue-2) 15%, var(--color-blue-3) 100%);
     color: var(--color-white);
     padding-top: 70px;
