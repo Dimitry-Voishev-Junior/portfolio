@@ -16,7 +16,7 @@ export class App implements AfterViewInit {
    ngAfterViewInit() {
     AOS.init({
       duration: 800,
-      once: false
+      once: true
     });
   }
 }
