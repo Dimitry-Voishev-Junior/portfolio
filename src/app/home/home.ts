@@ -1,4 +1,5 @@
-import { Component, Inject } from '@angular/core';
+import { Component, inject} from '@angular/core';
+import { Profile } from '../models/profile';
 import { ProfileServices } from '../services/profile-services';
 
 @Component({
@@ -9,5 +10,11 @@ import { ProfileServices } from '../services/profile-services';
 })
 export class Home {
 
-  profileService = Inject(ProfileServices);
+  profileServices = inject(ProfileServices);
+
+  profile?: Profile;
+
+  ngOnInit() {
+    this.profile = this.profileServices.getProfile();
+  }
 }
