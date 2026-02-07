@@ -11,7 +11,7 @@ export class ProfileServices {
       name: "Dimitry Voishev Junior",
       email: "mailto:dimitryjunior.dev@gmail.com",
       whatsAppUrl: "https://wa.me/5511981213222",
-      linkedInUrl: "https://www.linkedin.com/in/voishev-dev/"
+      linkedInUrl: "https://www.linkedin.com/in/voishev/"
     }
 
     return profile;
